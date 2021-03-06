@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+<script>
+    
+    var doc = new jsPDF();
+    var myFont = "";
+    doc.addFileToVFS("Nirmala UI.ttf", myFont);
+    doc.addFont("Nirmala UI.ttf", "Nirmala UI", "normal");
+    doc.text("অশোক, টাটা, দাইয়ু, ফাও, ভলভো কিছুই", 10, 10);
+    doc.save("BanglaText.pdf");
+</script>
+</html>
